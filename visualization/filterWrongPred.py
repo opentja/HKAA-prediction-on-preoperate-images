@@ -3,8 +3,8 @@ import os
 
 
 df = pd.read_csv('./final.csv')
-path1 = '/infodev1/phi-data/shi/kneeX-ray/preoperatePrediction/biggerThan20/wrongPred/'
-path2 = '/infodev1/phi-data/shi/kneeX-ray/preoperatePrediction/biggerThan25/wrongPred/'
+path1 = ''
+path2 = ''
 wrongPredList = os.listdir(path1)+os.listdir(path2)
 
 
