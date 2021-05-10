@@ -329,10 +329,10 @@ def plotStatisticalFigure(npyFilePath):
 
 flagList = ['0005','0510','1015','1520','2025']
 for flag in flagList:
-    testImagePath = '/infodev1/phi-data/shi/kneeX-ray/randomSelect50/ankleToHip'+flag+'PredRes/'
-    hipPath = '/infodev1/phi-data/shi/kneeX-ray/randomSelect50/ankleToHip'+flag+'PredRes/hip/coordinateWithEpochs48Lr0.001BatchSize16Resolution256.txt'
-    kneePath = '/infodev1/phi-data/shi/kneeX-ray/randomSelect50/ankleToHip'+flag+'PredRes/knee/coordinateWithEpochs48Lr0.001BatchSize8Resolution256.txt'
-    anklePath = '/infodev1/phi-data/shi/kneeX-ray/randomSelect50/ankleToHip'+flag+'PredRes/ankle/coordinateWithEpochs48Lr0.001BatchSize8Resolution256.txt'
+    testImagePath = '/randomSelect50/ankleToHip'+flag+'PredRes/'
+    hipPath = '/randomSelect50/ankleToHip'+flag+'PredRes/hip/coordinateWithEpochs48Lr0.001BatchSize16Resolution256.txt'
+    kneePath = '/randomSelect50/ankleToHip'+flag+'PredRes/knee/coordinateWithEpochs48Lr0.001BatchSize8Resolution256.txt'
+    anklePath = '/randomSelect50/ankleToHip'+flag+'PredRes/ankle/coordinateWithEpochs48Lr0.001BatchSize8Resolution256.txt'
 
     hipDict = readCoorAsMap(hipPath)
     kneeDict = readCoorAsMap(kneePath)
