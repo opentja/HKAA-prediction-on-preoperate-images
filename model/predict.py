@@ -39,8 +39,8 @@ def select_device(device='', apex=True, batch_size=None):
 def main():
     parser = argparse.ArgumentParser(description='CNN Example')
 
-    parser.add_argument('--foldPath', default='/infodev1/phi-data/shi/kneeX-ray/data/crossValidation/')
-    parser.add_argument('--stageFoldPath', default='/infodev1/phi-data/shi/kneeX-ray/data/crossValidation/')
+    parser.add_argument('--foldPath', default='')
+    parser.add_argument('--stageFoldPath', default='')
     parser.add_argument('--flag', default='hip', help='indicate which data you want to train, hip, knee or ankle.')
     parser.add_argument('--batchSize', type=int, default=16, metavar='16',
                         help='input batch size for training (default: 16)')
@@ -57,8 +57,8 @@ def main():
     parser.add_argument('--resolution', type=int, default=256)
     parser.add_argument('--bestModelFold', default=5,type=int)
     parser.add_argument('--dataSource', type=str, default='mayo')
-    parser.add_argument('--predictImagePath', default='/infodev1/phi-data/shi/kneeX-ray/preoperate/')
-    parser.add_argument('--predictionResultPath', default='/infodev1/phi-data/shi/kneeX-ray/preoperatePrediction/')
+    parser.add_argument('--predictImagePath', default='')
+    parser.add_argument('--predictionResultPath', default='')
 
 
     parser.add_argument('--device', default='1')
