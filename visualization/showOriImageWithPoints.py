@@ -333,12 +333,12 @@ def plotStatisticalFigure(npyFilePath, dataSource):
     plt.close()
 
 
-testImagePath = '/infodev1/phi-data/shi/kneeX-ray/data/crossValidation/testResult/'
+testImagePath = '/'
 
 dataSource = 'oai'
-hipPath = '/infodev1/phi-data/shi/kneeX-ray/data/crossValidation/testResult/hip/' + dataSource + '/coordinateWithEpochs48Lr0.001BatchSize16Resolution256.txt'
-kneePath = '/infodev1/phi-data/shi/kneeX-ray/data/crossValidation/testResult/knee/' + dataSource + '/coordinateWithEpochs48Lr0.001BatchSize8Resolution256.txt'
-anklePath = '/infodev1/phi-data/shi/kneeX-ray/data/crossValidation/testResult/ankle/' + dataSource + '/coordinateWithEpochs48Lr0.001BatchSize8Resolution256.txt'
+hipPath = '/testResult/hip/' + dataSource + '/coordinateWithEpochs48Lr0.001BatchSize16Resolution256.txt'
+kneePath = '/testResult/knee/' + dataSource + '/coordinateWithEpochs48Lr0.001BatchSize8Resolution256.txt'
+anklePath = '/testResult/ankle/' + dataSource + '/coordinateWithEpochs48Lr0.001BatchSize8Resolution256.txt'
 
 hipDict = readCoorAsMap(hipPath)
 kneeDict = readCoorAsMap(kneePath)
@@ -348,9 +348,9 @@ plotImageAndAngle(hipDict, kneeDict, ankleDict, testImagePath, dataSource)
 plotStatisticalFigure(testImagePath, dataSource)
 
 dataSource = 'mayo'
-hipPath = '/infodev1/phi-data/shi/kneeX-ray/data/crossValidation/testResult/hip/' + dataSource + '/coordinateWithEpochs48Lr0.001BatchSize16Resolution256.txt'
-kneePath = '/infodev1/phi-data/shi/kneeX-ray/data/crossValidation/testResult/knee/' + dataSource + '/coordinateWithEpochs48Lr0.001BatchSize8Resolution256.txt'
-anklePath = '/infodev1/phi-data/shi/kneeX-ray/data/crossValidation/testResult/ankle/' + dataSource + '/coordinateWithEpochs48Lr0.001BatchSize8Resolution256.txt'
+hipPath = '/testResult/hip/' + dataSource + '/coordinateWithEpochs48Lr0.001BatchSize16Resolution256.txt'
+kneePath = '/testResult/knee/' + dataSource + '/coordinateWithEpochs48Lr0.001BatchSize8Resolution256.txt'
+anklePath = '/testResult/ankle/' + dataSource + '/coordinateWithEpochs48Lr0.001BatchSize8Resolution256.txt'
 
 hipDict = readCoorAsMap(hipPath)
 kneeDict = readCoorAsMap(kneePath)
