@@ -57,8 +57,8 @@ def extractPatientInfoSaveCSV(allDicomFolder, predictedFolderPath):
     patientData = {'patientID': patientIDList,'sex':sexList, 'age':ageWhenStudyList, 'studyDate':studyDateList, 'birthDate':birthDate }
     patientDf = pd.DataFrame(patientData)
     patientDf.to_csv(predictedFolderPath.replace('preoperate/ankleToHip/','preoperatePrediction/')+'patientInfo.csv', index=False)
-    np.save('/infodev1/phi-data/shi/kneeX-ray/preoperatePrediction/malePatientIDList.npy', malePatientIDList)
-    np.save('/infodev1/phi-data/shi/kneeX-ray/preoperatePrediction/femalePatientIDList.npy', femalePatientIDList)
+    np.save('malePatientIDList.npy', malePatientIDList)
+    np.save('femalePatientIDList.npy', femalePatientIDList)
 
 def readCoorAsMap(txtPath):
     coorDict = {}
@@ -272,17 +272,17 @@ def plotStatisticalFigure(npyFilePath):
 start = time.time()
 print("hello")
 
-allDicomFolder='/infodev1/phi-data/shi/ankletohip/allDicomFiles/'
-predictedFolderPath='/infodev1/phi-data/shi/kneeX-ray/preoperate/ankleToHip/'
+allDicomFolder=''
+predictedFolderPath=''
 
 extractPatientInfoSaveCSV(allDicomFolder, predictedFolderPath)
 
-testImagePath = '/infodev1/phi-data/shi/kneeX-ray/preoperatePrediction/'
+testImagePath = ''
 
-hipPath = '/infodev1/phi-data/shi/kneeX-ray/preoperatePrediction/hip/coordinateWithEpochs48Lr0.001BatchSize16Resolution256.txt'
-kneePath = '/infodev1/phi-data/shi/kneeX-ray/preoperatePrediction/knee/coordinateWithEpochs48Lr0.001BatchSize8Resolution256.txt'
-anklePath = '/infodev1/phi-data/shi/kneeX-ray/preoperatePrediction/ankle/coordinateWithEpochs48Lr0.001BatchSize8Resolution256.txt'
-npyFolderPath = '/infodev1/phi-data/shi/kneeX-ray/preoperatePrediction/'
+hipPath = ''
+kneePath = ''
+anklePath = ''
+npyFolderPath = ''
 hipDict = readCoorAsMap(hipPath)
 kneeDict = readCoorAsMap(kneePath)
 ankleDict = readCoorAsMap(anklePath)
