@@ -17,10 +17,10 @@ def extratAngeDiff(path):
     return diffList
 
 
-a = extratAngeDiff('/infodev1/phi-data/shi/kneeX-ray/randomSelect50/ankleToHip0005PredRes/')
-b = extratAngeDiff('/infodev1/phi-data/shi/kneeX-ray/randomSelect50/ankleToHip0510PredRes/')
-c = extratAngeDiff('/infodev1/phi-data/shi/kneeX-ray/randomSelect50/ankleToHip1015PredRes/')
-d = extratAngeDiff('/infodev1/phi-data/shi/kneeX-ray/randomSelect50/ankleToHip1520PredRes/')
+a = extratAngeDiff('randomSelect50/ankleToHip0005PredRes/')
+b = extratAngeDiff('randomSelect50/ankleToHip0510PredRes/')
+c = extratAngeDiff('randomSelect50/ankleToHip1015PredRes/')
+d = extratAngeDiff('randomSelect50/ankleToHip1520PredRes/')
 
 diffStd = statistics.stdev(a + b + c + d)
 diffMean = statistics.mean(a + b + c + d)
