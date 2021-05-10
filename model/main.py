@@ -43,9 +43,9 @@ def select_device(device='', apex=True, batch_size=None):
 def main():
     parser = argparse.ArgumentParser(description='CNN Example')
 
-    parser.add_argument('--foldPath', default='/infodev1/phi-data/shi/kneeX-ray/data/crossValidation/')
+    parser.add_argument('--foldPath', default='')
     parser.add_argument('--stageFoldPath',
-                        default='/infodev1/phi-data/shi/kneeX-ray/data/crossValidation/')
+                        default='')
     parser.add_argument('--flag', default='hip', help='indicate which data you want to train, hip, knee or ankle.')
     # parser.add_argument('--foldPath', default='/Users/shiyan/Documents/Mayo/landmarkDetection/data/crossValidation/')
 
@@ -65,8 +65,8 @@ def main():
     parser.add_argument('--bestModelFold', default=5, type=int)
     parser.add_argument('--dataSource', type=str, default='oai')
     parser.add_argument('--device', default='0')
-    parser.add_argument('--predictImagePath', default='/infodev1/phi-data/shi/kneeX-ray/preoperate/')
-    parser.add_argument('--predictionResultPath', default='/infodev1/phi-data/shi/kneeX-ray/preoperatePrediction/')
+    parser.add_argument('--predictImagePath', default='')
+    parser.add_argument('--predictionResultPath', default='')
     args = parser.parse_args()
     print(args)
     # Device configuration
