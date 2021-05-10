@@ -79,8 +79,7 @@ def generateTxtAnnotation(cleanCsvPath):
     for rowIdx in range(0, rowNum, 14):
         print('hhh')
         imgId = cleanedDf.iloc[rowIdx, 0]
-        # imgPath = '/infodev1/non-phi-data/shiyan/landmarkDetection/data/images/' + imgId
-        # imageArr = cv2.imread(imgPath)
+    
 
         # left hip
         x1, y1 = extractPointCoor(cleanedDf, rowIdx)
@@ -143,7 +142,7 @@ def plotHist(leftAngleList, rightAngleList):
     plt.subplots_adjust(wspace=1)
     plt.close()
 
-cleanCsvPath = '/infodev1/non-phi-data/shiyan/landmarkDetection/data/annotations/clean.csv'
+cleanCsvPath = ''
 print('lol')
 leftAngleList, rightAngleList = generateTxtAnnotation(cleanCsvPath)
 plotHist(leftAngleList, rightAngleList)
