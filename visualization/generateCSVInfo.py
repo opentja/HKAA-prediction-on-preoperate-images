@@ -327,10 +327,10 @@ def getGaussianDistribution():
     plt.close()
 
 
-npyPath = '/infodev1/phi-data/shi/kneeX-ray/preoperatePrediction/'
-xlsxPath = '/infodev1/phi-data/shi/kneeX-ray/preoperatePrediction/PTKA.1985.2017.csv'
-preoperate = '/infodev1/phi-data/shi/kneeX-ray/preoperate/ankleToHip/'
-postoperate = '/infodev1/phi-data/shi/kneeX-ray/preoperate/'
+npyPath = ''
+xlsxPath = ''
+preoperate = ''
+postoperate = ''
 
 deletedPatientIDList = combineInfo(npyPath, xlsxPath)
 # moveImages(preoperate, postoperate, deletedPatientIDList)
@@ -338,7 +338,7 @@ secFilter()
 secFilter()
 thirdFilter(npyPath)
 
-outlierPath = '/infodev1/phi-data/shi/kneeX-ray/preoperatePrediction/'
+outlierPath = ''
 #
 filerOutlier(outlierPath)
 newFrequencyFigure(outlierPath, False)
