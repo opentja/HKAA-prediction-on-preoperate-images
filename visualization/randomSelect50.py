@@ -32,7 +32,7 @@ def readCSV():
 
 
 def randomCopy(nameList, path, flag):
-    newPath = '/infodev1/phi-data/shi/kneeX-ray/preoperate/ankleToHip' + flag + '/'
+    newPath = '' + flag + '/'
     if not os.path.exists(newPath):
         os.makedirs(newPath)
     end = len(nameList)
@@ -41,7 +41,7 @@ def randomCopy(nameList, path, flag):
         shutil.copy(path + nameList[idx], newPath)
 
 
-preoperate = '/infodev1/phi-data/shi/kneeX-ray/preoperate/ankleToHip/'
+preoperate = ''
 
 df2025, df1520, df1015, df0510, df0005 = readCSV()
 
