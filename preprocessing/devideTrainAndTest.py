@@ -12,6 +12,7 @@ def extractPatientID(imagesPath):
         # print(jpgPath )
         slashIdx = jpgPath.rfind('/')
         jpgName = jpgPath[slashIdx + 1:]
+        
         # print(jpgName)
         patientID = jpgName.replace('.jpg', '')
         # print(patientID)
@@ -131,15 +132,15 @@ def testData(testIdList, imagesPath, flag):
     testDf.to_csv(testPath + 'annotation.csv', index=False)
 
 
-imagesPath = '/home/ubuntu/landmarkDetection/data/images/'
+imagesPath = '/data/images/'
 
 idList = extractPatientID(imagesPath)
 tmpTrainIdList, testIdList = devideTrainAndTest(idList)
 
 
-hipImagesPath = '/home/ubuntu/landmarkDetection/data/hipKneeAnkleImagesAndAnnotation/hip/images/'
-kneeImagesPath = '/home/ubuntu/landmarkDetection/data/hipKneeAnkleImagesAndAnnotation/knee/images/'
-ankleImagesPath = '/home/ubuntu/landmarkDetection/data/hipKneeAnkleImagesAndAnnotation/ankle/images/'
+hipImagesPath = 'hipKneeAnkleImagesAndAnnotation/hip/images/'
+kneeImagesPath = 'hipKneeAnkleImagesAndAnnotation/knee/images/'
+ankleImagesPath = 'hipKneeAnkleImagesAndAnnotation/ankle/images/'
 fiveCrossValidation(tmpTrainIdList, hipImagesPath, flag='hip')
 fiveCrossValidation(tmpTrainIdList, kneeImagesPath, flag='knee')
 fiveCrossValidation(tmpTrainIdList, ankleImagesPath, flag='ankle')
