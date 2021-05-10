@@ -39,54 +39,12 @@ def deleteInvalidImages(imagesPath, unionId):
 
 def clearDataFrame(df, unionId, flag):
     df = df[df['#filename'].isin(unionId)]
-    df.to_csv('/infodev1/phi-data/shi/kneeX-ray/randomSelect50/ankleToHip'+flag+'/clean.csv', index=False)
+    df.to_csv('randomSelect50/ankleToHip'+flag+'/clean.csv', index=False)
 
 
 
 
-# csvPath='/infodev1/phi-data/shi/kneeX-ray/randomSelect50/ankleToHip0005/annotation.csv'
-# imagesPath = '/infodev1/phi-data/shi/kneeX-ray/randomSelect50/ankleToHip0005/'
-# tempDf = deleteInvalidAnnotationsFromTempCSV(csvPath)
-# imagesIdList = getValidAnnotationIdFromTempCSV(csvPath)
-# unionId = getUnionOfImagesId(imagesPath, imagesIdList=imagesIdList)
-# deleteInvalidImages(imagesPath, unionId)
-# clearDataFrame(tempDf, unionId, '0005')
-#
-# csvPath='/infodev1/phi-data/shi/kneeX-ray/randomSelect50/ankleToHip0510/annotation.csv'
-# imagesPath = '/infodev1/phi-data/shi/kneeX-ray/randomSelect50/ankleToHip0510/'
-# tempDf = deleteInvalidAnnotationsFromTempCSV(csvPath)
-# imagesIdList = getValidAnnotationIdFromTempCSV(csvPath)
-# unionId = getUnionOfImagesId(imagesPath, imagesIdList=imagesIdList)
-# deleteInvalidImages(imagesPath, unionId)
-# clearDataFrame(tempDf, unionId, '0510')
-#
-# csvPath='/infodev1/phi-data/shi/kneeX-ray/randomSelect50/ankleToHip1015/annotation.csv'
-# imagesPath = '/infodev1/phi-data/shi/kneeX-ray/randomSelect50/ankleToHip1015/'
-# tempDf = deleteInvalidAnnotationsFromTempCSV(csvPath)
-# imagesIdList = getValidAnnotationIdFromTempCSV(csvPath)
-# unionId = getUnionOfImagesId(imagesPath, imagesIdList=imagesIdList)
-# deleteInvalidImages(imagesPath, unionId)
-# clearDataFrame(tempDf, unionId,'1015')
 
-
-# csvPath='/infodev1/phi-data/shi/kneeX-ray/randomSelect50/ankleToHip1520/annotation.csv'
-# imagesPath = '/infodev1/phi-data/shi/kneeX-ray/randomSelect50/ankleToHip1520/'
-# tempDf = deleteInvalidAnnotationsFromTempCSV(csvPath)
-# imagesIdList = getValidAnnotationIdFromTempCSV(csvPath)
-# unionId = getUnionOfImagesId(imagesPath, imagesIdList=imagesIdList)
-# deleteInvalidImages(imagesPath, unionId)
-# clearDataFrame(tempDf, unionId,'1520')
-
-
-
-# csvPath='/infodev1/phi-data/shi/kneeX-ray/randomSelect50/ankleToHip2025/annotation.csv'
-# imagesPath = '/infodev1/phi-data/shi/kneeX-ray/randomSelect50/ankleToHip2025/'
-# tempDf = deleteInvalidAnnotationsFromTempCSV(csvPath)
-# imagesIdList = getValidAnnotationIdFromTempCSV(csvPath)
-# unionId = getUnionOfImagesId(imagesPath, imagesIdList=imagesIdList)
-# deleteInvalidImages(imagesPath, unionId)
-# clearDataFrame(tempDf, unionId,'2025')
-csvPath = '/infodev1/phi-data/shi/kneeX-ray/data/allOAIdata/temporary.csv'
+csvPath = 'allOAIdata/temporary.csv'
 df = deleteInvalidAnnotationsFromTempCSV(csvPath)
-df.to_csv('/infodev1/phi-data/shi/kneeX-ray/data/allOAIdata/clean.csv', index=False)
-
+df.to_csv('allOAIdata/clean.csv', index=False)
