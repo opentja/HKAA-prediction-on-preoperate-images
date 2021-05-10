@@ -133,31 +133,6 @@ def generateTxtAnnotation(cleanCsvPath, imagesPath, newImagePath):
     ankleDf.to_csv(newImagePath + 'ankle/' + 'annotation.csv', index=False)
 
 
-# cleanCsvPath = '/infodev1/phi-data/shi/kneeX-ray/randomSelect50/ankleToHip0005/clean.csv'
-# imagesPath = '/infodev1/phi-data/shi/kneeX-ray/randomSelect50/ankleToHip0005/'
-# newImagePath = '/infodev1/phi-data/shi/kneeX-ray/randomSelect50/ankleToHip0005Exp/'
-# generateTxtAnnotation(cleanCsvPath, imagesPath, newImagePath)
-
-# cleanCsvPath = '/infodev1/phi-data/shi/kneeX-ray/randomSelect50/ankleToHip0510/clean.csv'
-# imagesPath = '/infodev1/phi-data/shi/kneeX-ray/randomSelect50/ankleToHip0510/'
-# newImagePath = '/infodev1/phi-data/shi/kneeX-ray/randomSelect50/ankleToHip0510Exp/'
-# generateTxtAnnotation(cleanCsvPath, imagesPath, newImagePath)
-
-# cleanCsvPath = '/infodev1/phi-data/shi/kneeX-ray/randomSelect50/ankleToHip1015/clean.csv'
-# imagesPath = '/infodev1/phi-data/shi/kneeX-ray/randomSelect50/ankleToHip1015/'
-# newImagePath = '/infodev1/phi-data/shi/kneeX-ray/randomSelect50/ankleToHip1015Exp/'
-# generateTxtAnnotation(cleanCsvPath, imagesPath, newImagePath)
-
-# cleanCsvPath = '/infodev1/phi-data/shi/kneeX-ray/randomSelect50/ankleToHip1520/clean.csv'
-# imagesPath = '/infodev1/phi-data/shi/kneeX-ray/randomSelect50/ankleToHip1520/'
-# newImagePath = '/infodev1/phi-data/shi/kneeX-ray/randomSelect50/ankleToHip1520Exp/'
-# generateTxtAnnotation(cleanCsvPath, imagesPath, newImagePath)
-
-
-# cleanCsvPath = '/infodev1/phi-data/shi/kneeX-ray/randomSelect50/ankleToHip2025/clean.csv'
-# imagesPath = '/infodev1/phi-data/shi/kneeX-ray/randomSelect50/ankleToHip2025/'
-# newImagePath = '/infodev1/phi-data/shi/kneeX-ray/randomSelect50/ankleToHip2025Exp/'
-# generateTxtAnnotation(cleanCsvPath, imagesPath, newImagePath)
 
 
 def generateTxtAnnotation2(imageFolderPath, newImagePath):
@@ -203,4 +178,4 @@ def generateTxtAnnotation2(imageFolderPath, newImagePath):
     ankleDf = pd.DataFrame(ankleData)
     ankleDf.to_csv(newImagePath + 'ankle/' + 'annotation.csv', index=False)
 
-generateTxtAnnotation2('/infodev1/phi-data/shi/kneeX-ray/preoperate/ankleToHip/','/infodev1/phi-data/shi/kneeX-ray/preoperate/')
+generateTxtAnnotation2('','')
