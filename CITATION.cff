@@ -5,10 +5,10 @@ authors:
   given-names: "Shi"
 - family-names: "Ramazanian"
   given-names: "Taghi"
-- family-names: "Hilal"
-  given-names: "Maradit Kremers"
-- family-names: "Vipin"
-  given-names: "Chaudhary"
+- family-names: "Maradit Kremers"
+  given-names: "Hilal"
+- family-names: "Chaudhary"
+  given-names: "Vipin"
  
   
 title: "HKAA-prediction-on-preoperate-images"
