@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this project , please cite it as below."
+authors:
+- family-names: "Yan"
+  given-names: "Shi"
+- family-names: "Ramazanian"
+  given-names: "Taghi"
+- family-names: "Hilal"
+  given-names: "Maradit Kremers"
+- family-names: "Vipin"
+  given-names: "Chaudhary"
+ 
+  
+title: "HKAA-prediction-on-preoperate-images"
+version: 1.0.0
+doi: 10.5281/zenodo.1234
+date-released: 2022-02-10
+url: "https://github.com/opentja/HKAA-prediction-on-preoperate-images"
